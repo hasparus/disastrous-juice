@@ -1,9 +1,11 @@
 import ReactDOM from "react-dom";
 import React from "react";
-import { Canvas, useThree } from "react-three-fiber";
+import { Canvas, useThree, components as t } from "react-three-fiber";
 import { useDrag } from "react-use-gesture";
 import { useSpring, animated as a, AnimatedProps } from "react-spring/three";
 import "./styles.css";
+
+const { MeshNormalMaterial } = t;
 
 function Obj() {
   const { size, viewport } = useThree();
@@ -19,8 +21,8 @@ function Obj() {
 
   return (
     <a.mesh {...spring} {...bind()}>
-      <dodecahedronBufferGeometry attach="geometry" />
-      <meshNormalMaterial attach="material" />
+      <t.DodecahedronBufferGeometry attach="geometry" />
+      <MeshNormalMaterial attach="material" />
     </a.mesh>
   );
 }

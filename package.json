@@ -4,13 +4,14 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@types/react": "^16.9.9",
-    "@types/react-dom": "^16.9.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "@types/react": "^16.9.3",
+    "@types/react-dom": "^16.9.3",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-spring": "^8.0.27",
-    "react-three-fiber": "^3.0.3",
-    "react-use-gesture": "^6.0.12"
+    "react-three-fiber": "file:../react-three-fiber",
+    "react-use-gesture": "^6.0.14",
+    "three": "^0.109.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
