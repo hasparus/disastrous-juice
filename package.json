@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "parcel src/index.html",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "parcel build src/index.html && cd dist && surge"
   },
   "dependencies": {
     "@types/react": "^16.9.3",
@@ -9,12 +10,13 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-spring": "^8.0.27",
-    "react-three-fiber": "file:../react-three-fiber",
+    "react-three-fiber": "hasparus/react-three-fiber",
     "react-use-gesture": "^6.0.14",
     "three": "^0.109.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "surge": "^0.21.3",
     "typescript": "^3.6.4"
   }
 }
